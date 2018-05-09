@@ -1,8 +1,44 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #2A9FD6;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+#task {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#task td, #task th {
+  border: 1px solid #2A9FD6;
+  padding: 12px;
+}
+
+#task tr:nth-child(even){background-color: #2A9FD6;}
+
+
+#task tr:hover {background-color: #ddd;}
+
+#task th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  background-color: #ddd;
+  color: blue;
+}
+
+p{
+  font-size: 24px;
+  color: white;
 }

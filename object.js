@@ -1,9 +1,11 @@
-var car={
-    name:Chevy,
-    model:Impala,
-    weight:1050kg,
-    color:'blue',
-    call:function(){
-        console.log("name:model:weight:color");
+var person={
+    firstName:"William",
+    lastName:"Hathaway",
+    age:32
+    eyeColor:"black",
+    print: function(){
+        console.log("person.firstName, person.lastName, person.age, person.eyeColor");
     }
 }
+
+person.print();

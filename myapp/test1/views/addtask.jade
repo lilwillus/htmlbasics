@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    .container
+
+        h1= title
+        form#formAddTask(name="addtask",method="post",action="/addtask")
+            input.input-block-level#inputTaskName(type="text", placeholder="Name", name="taskname")
+            #[br]
+            #[br]
+            input#inputTaskDescription(type="text", placeholder="E-Mail", name="taskdesc")
+            #[br]
+            #[br]
+            input#inputTaskHours(type="text",placeholder="Hours", name="taskhours")
+            #[br]
+            #[br]
+            button.btn.btn-outline-primary#btnSubmit(type="submit") submit 
+
+

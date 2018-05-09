@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    .container
+        #[br]
+        h1.
+            Parent Involvement
+        #[br]
+        table#task
+            tr
+                th Name
+                th E-Mail
+                th Hours
+                th Update Task
+                th Delete Task
+            each task, i in tasklist
+                tr
+                    td= task.task
+                    td= task.description
+                    td= task.hours
+                    td
+                        a( href="/update/#{task._id}" ).btn.btn-success#btnUpdate
+                            | Update
+                        //- form(method="update", action="/updatetask/#{task._id}")
+                        //-     button.btn.btn-success#btnUpdate(type="submit") Update
+                    td
+                        form(method="delete", action="/deletetask/#{task._id}")
+                            button.btn.btn-danger#btnDelete(type="submit") Delete
+

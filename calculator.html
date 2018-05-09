@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+<h5>Calculator</h5>
+
+<input type="text" class="input" id="txtInput2" readonly="true" />
+<input type="text" class="input" id="txtOperator" readonly="true" />
+<input type="text" class="input" id="txtInput1" readonly="true" />
+<div>
+<hr/> </div>
+<div class="controls">
+<button class="btn" disabled="disabled"></button>
+<button onclick="del()" class="btn">del </button>
+<button onclick="reset()">C</button>
+<button onclick="onClick(event)">/</button>
+
+
+
+<button onclick="onClick(event)">7</button>
+<button onclick="onClick(event)">8</button>
+<button onclick="onClick(event)">9</button>
+<button onclick="onClick(event)">*</button>
+
+<button onclick="onClick(event)">4</button>
+<button onclick="onClick(event)">5</button>
+<button onclick="onClick(event)">6</button>
+<button onclick="onClick(event)">-</button>
+
+<button onclick="onClick(event)">1</button>
+<button onclick="onClick(event)">2</button>
+<button onclick="onClick(event)">3</button>
+<button onclick="onClick(event)">+</button>
+
+
+<button disabled="disabled"></button>
+<button onclick="onClick(event)">0</button>
+<button onclick="onDecimal()">.</button>
+<button onclick="calculate()">=</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
